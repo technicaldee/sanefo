@@ -11,59 +11,48 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      {/* Navbar */}
+      <div id="nav" className='flex items-center justify-between m-2 p-4'>
+        <a href='/' id="logo" className='w-80'><img src='./logo.png' /></a>
+        <a href="#" id="menu__item"> News </a>
+        <a href="#" id="menu__item"> About Us </a>
+        <a href="#" id="menu__item"> Contact Us </a>
+      </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      {/* Top */}
+      <div id="top" className='md:flex lg:flex'>
+        <div id='left' className='bg-yellow-500 w-full md:w-1/2 lg:w-1/2 flex md:pt-28 lg:pt-28'>
+          {/* Filler */}
+          <div className='hidden md:block lg:block md:w-1/4 lg:w-1/4'></div>
+          <img src='./banner.jpg' className='w-full md:w-3/4 lg:w-3/4' />
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        <div id='right' className='bg-yellow-100 w-full lg:w-1/2 md:w-1/2 md:pt-28 lg:pt-28'>
+          {/* Content */}
+          <div className='w-full md:w-3/4 lg:w-3/4 p-2 space-y-6 text-green-900'>
+            {/* Heading */}
+            <p className='font-bold text-4xl md:text-7xl lg:text-7xl'>A Safer World; <br />
+           One Neighbourhood at a time.</p>
+
+           {/* Explainer */}
+           <p>
+           Our objective is to offer a secure neighborhood for families, as well as basic human comforts and security for everyone, particularly the most vulnerable.
+           </p>
+
+           {/* CTA */}
+          <button href='#' className='main__btn'>
+             Donate Now
+          </button>
+
+          <button href='#' className='alt__btn'>
+             About Us
+          </button>
+          <br />
+        </div>
+          {/* Filler */}
+          <div className='hidden md:block lg:block md:w-1/4 lg:w-1/4'></div>
+        </div>
+      </div>
     </div>
   )
 }

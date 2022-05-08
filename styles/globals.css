@@ -1,3 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body{
+    @apply bg-yellow-100 md:bg-white lg:bg-white
+  }
+
+  #menu__item {
+    @apply hidden md:block lg:block
+  }
+
+  #nav a {
+    @apply items-center justify-center;
+  }
+
+  .main__btn {
+    @apply bg-green-700 text-white px-6 py-4
+  }
+
+  .alt__btn {
+    @apply text-green-700 px-6 py-4
+  }
+}
+
 html,
 body {
   padding: 0;
@@ -14,3 +40,4 @@ a {
 * {
   box-sizing: border-box;
 }
+

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
 
       {/* Navbar */}
       <div id="nav" className='flex items-center justify-between m-2 p-4'>
-        <a href='/' id="logo" className='w-80'><img src='./logo.png' /></a>
+        <Link href='/' id="logo" className='w-80'><img src='./logo.png' /></Link>
         <a href="#" id="menu__item"> News </a>
         <a href="#" id="menu__item"> About Us </a>
         <a href="#" id="menu__item"> Contact Us </a>
